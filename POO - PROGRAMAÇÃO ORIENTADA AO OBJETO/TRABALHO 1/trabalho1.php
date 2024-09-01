@@ -3,7 +3,7 @@ $i = 0;
 
 // while loop
 while ($i < 5) {
-    echo "While loop: $i\n";
+    echo "Laço While: $i\n";
     $i++;
 }
 

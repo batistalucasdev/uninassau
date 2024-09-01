@@ -1,10 +1,10 @@
 # while loop
 i = 0
 while i < 5:
-    print(f"While loop: {i}")
+    print(f"Laço While: {i}")
     i += 1
 
-# do-while simulation
+# simulação do-while
 i = 5
 while True:
     print(f"Simulação Do-While: {i}")
@@ -14,9 +14,9 @@ while True:
 
 # for loop
 for j in range(5):
-    print(f"For loop: {j}")
+    print(f"Laço For: {j}")
 
-# if statement
+# condicional if
 x = 10
 print("x = ", x)
 if x > 5:
