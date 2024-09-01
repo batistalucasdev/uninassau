@@ -20,7 +20,7 @@ int main() {
         printf("Laço For: %d\n", j);
     }
 
-    // if statement
+    // condicional if
     int x = 10;
     if (x > 5) {
         printf("x é maior que 5\n");
