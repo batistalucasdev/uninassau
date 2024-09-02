@@ -4,40 +4,40 @@ public class Main {
 
         // while loop
         while (i < 5) {
-            System.out.println("While loop: " + i);
+            System.out.println("Laço While: " + i);
             i++;
         }
 
         // do-while loop
         do {
-            System.out.println("Do-While loop: " + i);
+            System.out.println("Laço Do-While: " + i);
             i--;
         } while (i > 0);
 
         // for loop
         for (int j = 0; j < 5; j++) {
-            System.out.println("For loop: " + j);
+            System.out.println("Laço For: " + j);
         }
 
-        // if statement
+        // condicional if
         int x = 10;
         if (x > 5) {
-            System.out.println("x is greater than 5");
+            System.out.println("x é maior que 5");
         } else {
-            System.out.println("x is not greater than 5");
+            System.out.println("x é menor que 5");
         }
 
         // switch-case
         int y = 2;
         switch (y) {
             case 1:
-                System.out.println("y is 1");
+                System.out.println("y é 1");
                 break;
             case 2:
-                System.out.println("y is 2");
+                System.out.println("y é 2");
                 break;
             default:
-                System.out.println("y is not 1 or 2");
+                System.out.println("y não é 1 ou 2");
         }
     }
 }
