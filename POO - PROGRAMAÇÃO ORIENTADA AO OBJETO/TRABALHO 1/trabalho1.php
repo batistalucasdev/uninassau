@@ -9,33 +9,33 @@ while ($i < 5) {
 
 // do-while loop
 do {
-    echo "Do-While loop: $i\n";
+    echo "Laço Do-While: $i\n";
     $i--;
 } while ($i > 0);
 
 // for loop
 for ($j = 0; $j < 5; $j++) {
-    echo "For loop: $j\n";
+    echo "Laço For: $j\n";
 }
 
-// if statement
+// condicional if
 $x = 10;
 if ($x > 5) {
-    echo "x is greater than 5\n";
+    echo "x é maior que 5\n";
 } else {
-    echo "x is not greater than 5\n";
+    echo "x é menor que 5\n";
 }
 
 // switch-case
 $y = 2;
 switch ($y) {
     case 1:
-        echo "y is 1\n";
+        echo "y é 1\n";
         break;
     case 2:
-        echo "y is 2\n";
+        echo "y é 2\n";
         break;
     default:
-        echo "y is not 1 or 2\n";
+        echo "y não é 1 ou 2\n";
 }
 ?>

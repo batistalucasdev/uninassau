@@ -2,38 +2,38 @@ let i = 0;
 
 // while loop
 while (i < 5) {
-    console.log("While loop: " + i);
+    console.log("Laço While: " + i);
     i++;
 }
 
 // do-while loop
 do {
-    console.log("Do-While loop: " + i);
+    console.log("Laço Do-While: " + i);
     i--;
 } while (i > 0);
 
 // for loop
 for (let j = 0; j < 5; j++) {
-    console.log("For loop: " + j);
+    console.log("Laço For: " + j);
 }
 
-// if statement
+// condicional if
 let x = 10;
 if (x > 5) {
-    console.log("x is greater than 5");
+    console.log("x é maior que 5");
 } else {
-    console.log("x is not greater than 5");
+    console.log("x é menor que 5");
 }
 
 // switch-case
 let y = 2;
 switch (y) {
     case 1:
-        console.log("y is 1");
+        console.log("y é 1");
         break;
     case 2:
-        console.log("y is 2");
+        console.log("y é 2");
         break;
     default:
-        console.log("y is not 1 or 2");
+        console.log("y não é 1 ou 2");
 }
