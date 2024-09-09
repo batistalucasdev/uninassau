@@ -17,6 +17,24 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+        <div class="search">
+            <div class="container">
+                <div class="search__header">
+                    <a class="search__logo-anchor" href="/">
+                        <img data-lazyloaded="1" data-placeholder-resp="288x112" src="https://www.minhareceita.com.br/app/themes/default/dist/images/logo_orange.png" alt="Minha Receita Seara" data-src="https://www.minhareceita.com.br/app/themes/default/dist/images/logo_orange.png" class="search__logo entered litespeed-loaded" width="288" height="112" data-ll-status="loaded"><noscript><img alt="Minha Receita Seara" src="https://www.minhareceita.com.br/app/themes/default/dist/images/logo_orange.png" class="search__logo" class="header__logo-img" width="288" height="112"></noscript>
+                    </a>
+                    <button aria-label="Close Search Button" class="search__close"></button>
+                </div>
+        
+                <form class="search__input-block" method="GET" action="/pesquisar">
+                    <input placeholder="Escreva aqui" type="text" name="q" class="search__input" required="">
+                    <button aria-label="Search Button Input" class="search__input-button" type="submit"></button>
+                </form>
+        
+                <div class="search__results"></div>
+            </div>
+        </div>
+        <button class="header__search" type="submit" aria-label="Header Search"></button>
     </header>
 
     <section class="intro">
@@ -26,20 +44,31 @@
 
     <section class="recipes">
         <div class="recipe-card">
-            <img src="imagem1.jpg" alt="Receita 1">
-            <h3>Receita 1</h3>
-            <p>Descrição breve da receita 1.</p>
+            <img src="https://www.minhareceita.com.br/app/uploads/2024/08/bolo-de-cenoura-recheado-portal-minha-receita-1.webp" alt="Receita 1">
+            <h3>Bolo de Cenoura Recheado</h3>
+            <p>Quando o assunto é preparar um lanche da tarde saboroso, o bolo de cenoura é a pedida certa.</p>
         </div>
         <div class="recipe-card">
-            <img src="imagem2.jpg" alt="Receita 2">
-            <h3>Receita 2</h3>
-            <p>Descrição breve da receita 2.</p>
+            <img src="https://www.minhareceita.com.br/app/uploads/2024/03/bolo-de-chocolate-simples-e-fofinho-portal-minha-receita-1.jpg" alt="Receita 2">
+            <h3>Receita - Bolo de Chocolate</h3>
+            <p>Para o preparo não há muito mistério, basta bater os ingredientes líquidos no aparelho e unir com os secos em seguida, começando com a menor velocidade do liquidificador e aumentando aos poucos para fazer uma massa homogênea.</p>
         </div>
         <div class="recipe-card">
-            <img src="imagem3.jpg" alt="Receita 3">
-            <h3>Receita 3</h3>
-            <p>Descrição breve da receita 3.</p>
+            <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-Xicara-de-chocolate-4.png" alt="Receita 3">
+            <h3>Chocolate quente</h3>
+            <p>Sim, um chocolate quente é a bebida ideal para um dia frio! A combinação de chocolate derretido com leite quente cria uma sensação de aconchego e conforto, ideal para os dias mais frios.</p>
         </div>
+        <div class="recipe-card">
+            <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-Xicara-de-chocolate-4.png" alt="Receita 3">
+            <h3>Mousse de Maracujá</h3>
+            <p>A receita de mousse de maracujá é uma receita fácil de sobremesa para servir depois de um almoço de domingo com a família</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-panqueca-de-liquificador.png" alt="Receita 3">
+            <h3>Panqueca de liquidificador</h3>
+            <p>Sim, um chocolate quente é a bebida ideal para um dia frio! A combinação de chocolate derretido com leite quente cria uma sensação de aconchego e conforto, ideal para os dias mais frios.</p>
+        </div>
+        
     </section>
 
     <footer>
