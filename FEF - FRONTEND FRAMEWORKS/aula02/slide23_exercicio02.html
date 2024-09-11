@@ -1,0 +1,25 @@
+<!-- Faça um Script que Leia uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é C = ( F – 32 ) * ( 5 / 9 ), sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 23</title>
+</head>
+
+<body>
+    <h1>Exercício 02</h1>
+    <div>
+        <script>
+            let fahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit: "));
+            document.write("\nTemperatura em Fahrenheit: " + fahrenheit + "<br>");
+            
+            let celsius = (fahrenheit - 32) * (5/9);
+            
+            document.write("\nTemperatura em Celsius: " + celsius.toFixed(2) + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
