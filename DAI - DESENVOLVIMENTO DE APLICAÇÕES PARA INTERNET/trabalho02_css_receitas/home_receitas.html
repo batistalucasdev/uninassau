@@ -1,100 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas receitas</title>
+    <title>Receitas Deliciosas</title>
+    <link rel="stylesheet" href="home_receitas.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .search {
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .search__input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .recipe-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .recipe-card h3 {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .recipe-card p {
+            padding: 0 15px 15px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>Receitas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pesquisar Receitas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body bgcolor="lightyellow">
-    <h1><u>Bolo de Cenoura Recheado</u></h1>
+    <section class="intro">
+        <h2>Bem-vindo à sua fonte de receitas!</h2>
+        <p>Encontre a receita perfeita para qualquer ocasião. Aqui estão algumas das nossas receitas mais populares:</p>
+    </section>
 
-    <p>Doces, Bolos e Sobremesas para fazer e se deliciar no lanche da tarde. Preparos simples e saborosos para acompanhar o café.</p>
+    <div class="search">
+        <form class="search__input-block" method="GET" action="/pesquisar">
+            <input placeholder="Escreva aqui" type="text" name="q" class="search__input" required="">
+        </form>
+    </div>
 
-    <img width="560" height="315"
-        src="https://www.minhareceita.com.br/app/uploads/2024/08/bolo-de-cenoura-recheado-portal-minha-receita-1.webp"
-        alt="Bolo de Cenoura Recheado">
+    <section class="recipes">
+        <div class="recipe-card">
+            <a href="receita1.html">
+                <img src="https://www.minhareceita.com.br/app/uploads/2024/08/bolo-de-cenoura-recheado-portal-minha-receita-1.webp" alt="Bolo de Cenoura Recheado">
+                <h3>Bolo de Cenoura Recheado</h3>
+                <p>Quando o assunto é preparar um lanche da tarde saboroso, o bolo de cenoura é a pedida certa.</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receita2.html">
+                <img src="https://www.minhareceita.com.br/app/uploads/2024/03/bolo-de-chocolate-simples-e-fofinho-portal-minha-receita-1.jpg" alt="Receita - Bolo de Chocolate">
+                <h3>Receita - Bolo de Chocolate</h3>
+                <p>Para o preparo não há muito mistério, basta bater os ingredientes líquidos no liquidificador.</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receita3.html">
+                <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-Xicara-de-chocolate-4.png" alt="Chocolate Quente">
+                <h3>Chocolate Quente</h3>
+                <p>A combinação de chocolate derretido com leite quente é perfeita para os dias frios.</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receita4.html">
+                <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-Xicara-de-chocolate-4.png" alt="Mousse de Maracujá">
+                <h3>Mousse de Maracujá</h3>
+                <p>Uma receita fácil e deliciosa para sobremesas de domingo com a família.</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="receita5.html">
+                <img src="https://www.minhareceita.com.br/app/uploads/2024/07/desktop-panqueca-de-liquificador.png" alt="Panqueca de Liquidificador">
+                <h3>Panqueca de Liquidificador</h3>
+                <p>Simples e rápida, essa panqueca é perfeita para qualquer refeição.</p>
+            </a>
+        </div>
+    </section>
 
-    <h2>Ingredientes</h2>
-    <ul>
-        <li>1 xícara de Margarina Doriana sem Sal derretida</li>
-        360g de cenoura descascada e ralada</li>
-        <li>4 unidades de ovos em temperatura ambiente</li>
-        <li>1 1/2 xícara de açúcar</li>
-        <li>2 xícaras de farinha de trigo</li>
-        <li>1 colher de sopa de fermento</li>
-        <li>1 pitada de sal</li>
-        <li>160g de chocolate meio amargo picado grosseiramente</li>
-    </ul>
-
-    <h3><i>Para a ganache</i></h3>
-    <ul>
-        <li>200g de chocolate meio amargo</li>
-        <li>3/4 xícara de creme de leite fresco</li>
-    </ul>
-
-    <h2>Modo de preparo</h2>
-    <h3>Como fazer bolo de cenoura recheado</h3>
-    <ol>
-        <li>Preaqueça o forno a 180ºC;</li>
-        <li>Em um liquidificador adicione a cenoura ralada, os ovos, a Margarina Doriana sem Sal e o açúcar;</li>
-        <li>Bata tudo por cerca de 5 minutos ou até formar um creme liso e homogêneo;</li>
-        <li>Enquanto a mistura bate, peneire sobre uma tigela grande a farinha de trigo, o fermento e o sal;</li>
-        <li>Transfira o creme de cenoura para uma tigela;</li>
-        <li>Misturando com um batedor de arame delicadamente, adicione a mistura de farinha peneirada aos poucos até
-            obter uma massa lisa;</li>
-        <li>Dispense 2/3 da massa em uma assadeira antiaderente ou untada com Margarina Doriana sem Sal e enfarinhada;
-        </li>
-        <li>Espalhe o chocolate picado por cima da massa, tomando o cuidado para que o chocolate não fique encostado nas
-            laterais do tabuleiro;</li>
-        <li>Cubra com o restante da massa e leve para assar por 45 minutos;</li>
-        <li>Retire do forno e deixe esfriar por completo para desenformar;</li>
-    </ol>
-    <h3><i>Para a ganache</i></h3>
-    <ol>
-        <li>Pique o chocolate meio amargo e adicione em uma tigela de vidro ou louça;</li>
-        <li>Leve o creme de leite ao fogo médio até começar a levantar fervura;</li>
-        <li>Assim que surgirem as primeiras bolhas, transfira o creme de leite para a tigela do chocolate e espere 2
-            minutos;</li>
-        <li>Misture bem até que todo o chocolate derreta e forme um creme liso e brilhante;</li>
-        <li>Espalhe a ganache por cima do bolo de cenoura recheado com chocolate e sirva.
-    </ol>
-
-    <h2>Vídeo da receita</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZwbMYjCyE?si=aqk6d86HlitziFzQ"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <h2>Fato sobre a receita</h2>
-    <p>Rendimento: 12 porções</p>
-    <p>Preparo: 2 horas</p>
-    <p>Tabela nutricional:</p>
-    <table border="1" style="width:50%; text-align:center;">
-        <thead>
-            <tr>
-                <th>Porção (g)</th>
-                <th>Calorias (kcal)</th>
-                <th>Carboidratos (g)</th>
-                <th>Proteínas (g)</th>
-                <th>Gorduras Totais (g)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>100</td>
-                <td>314</td>
-                <td>57,32</td>
-                <td>5,31</td>
-                <td>7,91</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p>Fonte: <a href="https://www.minhareceita.com.br/receita/bolo-de-cenoura-recheado/">Bolo de Cenoura Recheado</a>
-    </p>
+    <footer>
+        <p>&copy; 2024 Receitas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
-
 </html>

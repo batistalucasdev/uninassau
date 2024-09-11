@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Receitas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .recipe {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .recipe img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .recipe-title {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .recipe a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Receitas Deliciosas</h1>
+</header>
+
+<div class="search-bar">
+    <input type="text" id="search" placeholder="Pesquise uma receita...">
+</div>
+
+<div class="recipes">
+    <div class="recipe">
+        <a href="receita1.html">
+            <img src="imagens/receita1.jpg" alt="Receita 1">
+            <div class="recipe-title">Receita 1</div>
+        </a>
+    </div>
+    <div class="recipe">
+        <a href="receita2.html">
+            <img src="imagens/receita2.jpg" alt="Receita 2">
+            <div class="recipe-title">Receita 2</div>
+        </a>
+    </div>
+    <div class="recipe">
+        <a href="receita3.html">
+            <img src="imagens/receita3.jpg" alt="Receita 3">
+            <div class="recipe-title">Receita 3</div>
+        </a>
+    </div>
+    <div class="recipe">
+        <a href="receita4.html">
+            <img src="imagens/receita4.jpg" alt="Receita 4">
+            <div class="recipe-title">Receita 4</div>
+        </a>
+    </div>
+    <div class="recipe">
+        <a href="receita5.html">
+            <img src="imagens/receita5.jpg" alt="Receita 5">
+            <div class="recipe-title">Receita 5</div>
+        </a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        let recipes = document.querySelectorAll('.recipe');
+        
+        recipes.forEach(recipe => {
+            let title = recipe.querySelector('.recipe-title').innerText.toLowerCase();
+            if (title.includes(filter)) {
+                recipe.style.display = '';
+            } else {
+                recipe.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
