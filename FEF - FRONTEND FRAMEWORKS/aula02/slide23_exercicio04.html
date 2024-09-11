@@ -12,12 +12,15 @@
     <h1>Exercício 04</h1>
     <div>
         <script>
-            let salario = parseFloat(prompt("Digite o salário do vendedor: "));
-            document.write("\nSalário: " + salario + "<br>");
+            let salarioFixo = parseFloat(prompt("Digite o salário do vendedor: "));
+            document.write("\nSalário: " + salarioFixo + "<br>");
             let vendas = parseFloat(prompt("Digite o valor total de vendas do vendedor: "));
             document.write("\nVendas: " + vendas + "<br>");
-            let comissao = parseFloat(prompt("Digite o percentual de comissão que ele ganha pelas vendas: "));
-            document.write("\nVendas: " + comissao + "<br>");
+            let percentualComissao = parseFloat(prompt("Digite o percentual de comissão que ele ganha pelas vendas: "));
+            document.write("\nPercentual de comissão: " + percentualComissao + "<br>");
+
+            comissao =  (vendas * percentualComissao)/100
+            salarioTotal = 
             
             document.write("\nQuadrado do número: " + quadrado + "<br>");
         </script>
