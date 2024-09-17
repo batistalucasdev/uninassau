@@ -1,0 +1,40 @@
+<!-- Faça um Script que receba pelo prompt o nome, RG, CPF e Idade. Escreva-os na tela -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Média - Funções</title>
+</head>
+
+<body>
+    <h1>Exemplo Média - Funções </h1>
+    <button onclick="oi()">oi</button>
+    <div>
+        <script>
+            function soma (a,b){
+                let aux = a + b;
+                return aux;
+            }
+
+            function media (x,y){
+                let a = soma(x,y);
+                return a/2;
+            }
+
+            let m = media(8,6);
+            console.log(m);
+
+            function oi() {
+                alert("oi")
+                
+            }
+
+            document.write("\nMédia: ", + m + "<br>");
+    
+        </script>
+    </div>
+</body>
+
+</html>

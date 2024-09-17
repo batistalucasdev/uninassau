@@ -1,0 +1,30 @@
+<!-- Faça um Script que receba pelo prompt o nome, RG, CPF e Idade. Escreva-os na tela -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Fatorial - Funções</title>
+</head>
+
+<body>
+    <h1>Exemplo Fatorial - Funções </h1>
+    <div>
+        <script>
+            function fatorial (n){
+                if (n == 0 || n == 1)
+                return 1;
+            else
+            return n * fatorial(n - 1);
+            }
+
+            let resultado = fatorial(3);
+            console.log(resultado);
+            document.write(resultado);
+            
+        </script>
+    </div>
+</body>
+
+</html>
