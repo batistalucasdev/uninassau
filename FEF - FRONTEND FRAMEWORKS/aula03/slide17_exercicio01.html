@@ -1,0 +1,46 @@
+<!-- Crie um Script que receba dois números  e dado 
+uma condição recebida pelo switch, podendo ser: 
+soma, subtração,multiplicação ou divisão faça a 
+operação pedida. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 14</title>
+</head>
+
+<body>
+    <h1>Exercício 02</h1>
+    <div>
+        <script>
+            let n1 = parseFloat(prompt("Digite o primeiro número: "));
+            document.write("\nNúmero: " + n1 + "<br>");
+            let n2 = parseFloat(prompt("Digite o segundo número: "));
+            document.write("\nNúmero: " + n2 + "<br>");
+
+            let operacao = 4;
+
+            switch (operacao) {
+                case 1: document.write("Operação escolhida: Soma");
+                    break;
+
+                case 2: document.write("Operação escolhida: Subtração");
+                    break;
+
+                case 3: document.write("Operação escolhida: Multiplicação");
+                    break;
+
+                case 4: document.write("Operação escolhida: Divisão");
+                    break;
+                
+                default: document.write("Operação escolhida não existe.")
+            }
+
+            document.writeln("O número é par.");
+        </script>
+    </div>
+</body>
+
+</html>
