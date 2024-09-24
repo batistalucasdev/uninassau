@@ -1,0 +1,30 @@
+<!-- Elaborar um Script que efetue a leitura de um 
+número inteiro e apresentar uma mensagem 
+informando se o número é par ou ímpar. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 13</title>
+</head>
+
+<body>
+    <h1>Exercício 02</h1>
+    <div>
+        <script>
+            let numero = parseInt(prompt("Digite o número: "));
+            document.write("\nNúmero: " + numero + "<br>");
+            
+            if (numero % 2 == 0){
+                document.writeln("O número é par.");
+            }
+            else{
+                document.writeln("O número é ímpar.");
+            }
+        </script>
+    </div>
+</body>
+
+</html>

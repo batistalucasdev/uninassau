@@ -1,0 +1,41 @@
+<!-- Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 13</title>
+</head>
+
+<body>
+    <h1>Exercício 01</h1>
+    <div>
+        <script>
+            let n1 = parseFloat(prompt("Digite o primeiro número: "));
+            document.write("\nNúmero 1: " + n1 + "<br>");
+            let n2 = parseFloat(prompt("Digite o segundo número: "));
+            document.write("\nNúmero 2: " + n2 + "<br>");
+            let n3 = parseFloat(prompt("Digite o terceiro número: "));
+            document.write("\nNúmero 3: " + n3 + "<br>");
+            
+            media = (n1 + n2 + n3)/3;
+            document.write("\nMédia: " + media + "<br>");
+
+            if (media > 6){
+                document.writeln("o aluno esta aprovado");
+            }
+            else{
+                if (media > 5){
+                    document.writeln("o aluno esta de recuperação");
+                }
+                else{
+                    document.writeln("o aluno esta reprovado");
+                }
+            }
+            
+        </script>
+    </div>
+</body>
+
+</html>
