@@ -33,27 +33,32 @@ h2{
     border-radius: 20px;
 }
 .tabela{
-    border: 1px solid;
     width: 50%;
+    background-color: #ffffff;
+    color: black;
     border-collapse: collapse;
     padding: 8px;
     text-align: center;
 }
-/*.tabela-td {
-    border: 1px solid black;
-    background: white;
 
+td, th {
+    text-align: center;
+    border: 2px solid black;
+    color: #fa7642;
 }
-.tabela-th {
-    border: 1px solid black;
-    background: blue;
-
-}
-*/
 a {
     text-decoration: none;
 }
 
 #inputbusca {
     border-radius: 10px;
+    background-color: rgb(248, 202, 241);
+    width: 50%;
+    border: #ffffff;
+}
+.search-button{
+    border: none;
+    color: #fa7642;
+    background-color: #fff;
+    font-style: italic;
 }
