@@ -14,13 +14,7 @@ h2{
     text-align: center;
     text-decoration: underline;
 }
-.homepage-fotos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.sobremesas {
+.sobremesas{
     display: flex;
     justify-content: center;
     align-items: center;
