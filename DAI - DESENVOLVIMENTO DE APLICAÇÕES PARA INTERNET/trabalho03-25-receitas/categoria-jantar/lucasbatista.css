@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    background: lightyellow;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    background: #fa7642;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+h2{
+    color: #fa7642;
+    text-align: center;
+    text-decoration: underline;
+}
+.sobremesas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.receita {
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.tabela{
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+
+td, th {
+    text-align: center;
+    border: 2px solid black;
+    color: #fa7642;
+}
+a {
+    text-decoration: none;
+}
+
+#inputbusca {
+    border-radius: 10px;
+    background-color: rgb(248, 202, 241);
+    width: 50%;
+    border: #ffffff;
+}
+.search-button{
+    border: none;
+    color: #fa7642;
+    background-color: #fff;
+    font-style: italic;
+}
