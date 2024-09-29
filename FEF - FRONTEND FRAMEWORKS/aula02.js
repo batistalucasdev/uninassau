@@ -33,13 +33,49 @@ function informacoes(){
     let resultado03 = document.getElementById("resultado03");
     resultado03.innerHTML = `Seu nome é ${nome} e sua idade é ${idade}`;
 }
+
 //Slide 23 - Exercício 01
-informacoes_pessoais(){
-    let nome = document.getElementById("input-nome").value;
+function informacoes_pessoais(){
+    let nome = document.getElementById("input-nome-info").value;
     let rg = document.getElementById("input-rg").value;
     let cpf = document.getElementById("input-cpf").value;
-    let idade = parseInt(document.getElementById("input-idade").value);
+    let idade = parseInt(document.getElementById("input-idade-info").value);
     
     let resultado04 = document.getElementById("resultado04");
     resultado04.innerHTML = `Seu nome é ${nome}, seu RG é ${rg}, seu CPF é ${cpf} e sua idade é ${idade}`;
 }
+
+//Slide 23 - Exercício 02
+function temperatura(){
+    let fahrenheit = parseFloat(document.getElementById("input-fahrenheit").value);
+
+    let celsius = (fahrenheit - 32) * (5/9);
+
+    let resultado05 = document.getElementById("resultado05");
+    resultado05.innerHTML = `Essa temperatura convertida corresponde a ${celsius.toFixed(2)} graus Celsius.`;
+}
+
+//Slide 23 - Exercício 03
+function quadrado(){
+    let numero = parseInt(document.getElementById("input-inteiro").value);
+
+    let quadrado = numero * numero;
+
+    let resultado06 = document.getElementById("resultado06");
+    resultado06.innerHTML = `O quadrado desse número é ${quadrado}`;
+}
+
+//Slide 23 - Exercício 04
+function calcularSalario(){
+    let salarioFixo = parseFloat(document.getElementById("input-salario-fixo").value);
+    let vendas = parseFloat(document.getElementById("input-vendas").value);
+    let percentualComissao = parseFloat(document.getElementById("input-percentual-comissao").value);
+
+    let valorComissao = vendas * percentualComissao/100;
+    let salarioTotal = salarioFixo + valorComissao;
+
+    let resultado07 = document.getElementById("resultado07");
+    resultado07.innerHTML = `O valor da comissão do vendedor é ${valorComissao} e seu salário total é ${salarioTotal}`;
+
+}
+//Calcular e apresentar o valor da comissão que ele vai receber e o salário total
