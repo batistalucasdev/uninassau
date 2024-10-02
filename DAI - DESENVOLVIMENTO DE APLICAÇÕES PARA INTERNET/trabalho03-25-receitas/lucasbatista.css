@@ -68,3 +68,7 @@ a {
     background-color: #fff;
     font-style: italic;
 }
+#link-home{
+    text-decoration: none;
+    color: #ffffff;
+}
