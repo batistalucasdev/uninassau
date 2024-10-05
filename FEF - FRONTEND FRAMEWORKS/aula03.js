@@ -173,7 +173,7 @@ function somaDoisMaiores() {
 function fazer_operacao() {
     let numero01 = parseFloat(document.getElementById("input-numero01").value);
     let numero02 = parseFloat(document.getElementById("input-numero02").value);
-    let operacao = document.getElementById("input-operacao").value.toLowerCase();
+    let operacao = document.getElementById("operacao").value;
 
     let resultadoOperacao;
 
@@ -309,6 +309,22 @@ function exibir_tabuada() {
 }
 
 //Slide 23 - Exercício 02
+function calcularMediaWhile() {
+    let numAlunos = parseInt(prompt("Quantos alunos há na sala?")); // Pergunta ao usuário quantos alunos
+    let somaNotas = 0; // Inicializa a soma das notas
+    let contador = 0; // Contador para controlar o número de notas
+
+    while (contador < numAlunos) { // Enquanto o contador for menor que o número de alunos
+        let nota = parseFloat(prompt(`Digite a nota do aluno ${contador + 1}:`)); // Solicita a nota do aluno
+        somaNotas += nota; // Adiciona a nota à soma
+        contador++; // Incrementa o contador
+    }
+
+    let media = somaNotas / numAlunos; // Calcula a média
+    let resultado17 = document.getElementById("resultado17");
+    resultado17.innerHTML = `A média da turma é: ${media.toFixed(2)}`; // Exibe a média formatada com 2 casas decimais
+}
+
 //Slide 23 - Exercício 03
 function calcularSomaWhile() {
     let N = parseInt(document.getElementById("input-n").value); // Lê o valor de N
