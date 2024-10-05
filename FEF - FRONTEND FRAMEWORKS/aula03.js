@@ -40,8 +40,52 @@ function palavra_chave() {
 }
 
 //Slide 06 - Exercício 03
+function ordem_crescente() {
+    let num1 = parseFloat(document.getElementById("input-numero-01").value);
+    let num2 = parseFloat(document.getElementById("input-numero-02").value);
+    let num3 = parseFloat(document.getElementById("input-numero-03").value);
+
+    let resultado03 = '';
+
+    // Ordenação usando operadores lógicos
+    if (num1 <= num2 && num1 <= num3) {
+        resultado03 += num1 + ' ';
+        if (num2 <= num3) {
+            resultado03 += num2 + ' ' + num3; // num1 < num2 < num3
+        } else {
+            resultado03 += num3 + ' ' + num2; // num1 < num3 < num2
+        }
+    } else if (num2 <= num1 && num2 <= num3) {
+        resultado03 += num2 + ' ';
+        if (num1 <= num3) {
+            resultado03 += num1 + ' ' + num3; // num2 < num1 < num3
+        } else {
+            resultado03 += num3 + ' ' + num1; // num2 < num3 < num1
+        }
+    } else {
+        resultado03 += num3 + ' ';
+        if (num1 <= num2) {
+            resultado03 += num1 + ' ' + num2; // num3 < num1 < num2
+        } else {
+            resultado03 += num2 + ' ' + num1; // num3 < num2 < num1
+        }
+    }
+
+    document.getElementById("resultado03").innerHTML = `Números em ordem crescente: ${resultado03}`;
+}
 
 //Slide 06 - Exercício 04
+function calcular_consumo() {
+    let distancia = parseFloat(document.getElementById("input-distancia").value);
+    let combustivel = parseFloat(document.getElementById("input-combustivel").value);
+
+    if (distancia > 0 && combustivel > 0) {
+        let consumoMedio = distancia / combustivel;
+        document.getElementById("resultado04").innerHTML = `O consumo médio é de ${consumoMedio.toFixed(2)} km/l.`;
+    } else {
+        document.getElementById("resultado04").innerHTML = "Por favor, insira valores válidos para distância e combustível.";
+    }
+}
 
 //Slide 13 - Exercício 01
 function calcular_media() {
@@ -112,7 +156,6 @@ function soma_maiores() {
 
     let resultado09 = document.getElementById("resultado09");
     resultado09.innerHTML = `${somaMaiores}`;
-
 }
 
 //Slide 17 - Exercício 01
@@ -221,7 +264,7 @@ function calcularSomaParesFor() {
 }
 
 //Slide 20 - Exercício 04
-function calcularSomaImparesFor(){
+function calcularSomaImparesFor() {
     let soma = 0;
 
     for (let i = 1; i <= 100; i++) {
@@ -235,6 +278,43 @@ function calcularSomaImparesFor(){
 }
 
 //Slide 23 - Exercício 01
-function 
+function exibir_tabuada() {
+    let resultado = '';
+    let i = 1; // Inicializa o primeiro número da tabuada
+
+    while (i <= 10) { // Laço para os números de 1 a 10
+        let j = 1; // Inicializa o multiplicador
+
+        while (j <= 10) { // Laço para multiplicar
+            resultado += `${i} x ${j} = ${i * j}\n`; // Formata a linha da tabuada
+            j++; // Incrementa o multiplicador
+        }
+
+        resultado += '\n'; // Adiciona uma linha em branco entre as tabuadas
+        i++; // Incrementa o número da tabuada
+    }
+
+    document.getElementById("resultado16").innerText = resultado; // Exibe o resultado na tela
+}
+
 //Slide 23 - Exercício 02
 //Slide 23 - Exercício 03
+function calcularSomaWhile() {
+    let N = parseInt(document.getElementById("input-n").value); // Lê o valor de N
+    let soma = 0; // Inicializa a soma
+
+    // Valida se N é um número positivo
+    if (N > 0) {
+        let contador = 1; // Inicializa o contador
+
+        while (contador <= N) { // Laço para somar de 1 até N
+            soma += contador; // Adiciona o contador à soma
+            contador++; // Incrementa o contador
+        }
+
+        let resultado18 = document.getElementById("resultado18");
+        resultado18.innerHTML = `A soma de todos os números inteiros de 1 a ${N} é: ${soma}`; // Exibe o resultado
+    } else {
+        alert("Por favor, insira um número inteiro positivo."); // Mensagem de erro se N não for positivo
+    }
+}
