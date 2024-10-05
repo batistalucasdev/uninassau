@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 01</title>
+</head>
+
+<body>
+
+<script>
+    let salarioFixo = parseFloat(prompt("Digite o salário do vendedor: "));
+    let valorVendas = parseFloat(prompt("Digite o valor de vendas: "));
+    let percentualComissao = parseFloat(prompt("Digite o percentual da comissão: "));
+
+    let comissao = (valorVendas * percentualComissao) / 100;
+    let salarioTotal = salarioFixo + comissao;
+
+    document.writeln(`O valor da comissão é: ${comissao}`);
+    document.writeln(`<br>`);
+    document.writeln(`O valor do salário total é: ${salarioTotal}`);
+</script>
+
+</body>
+
+</html>
+
+<!--
+Elaborar um Script que leia de um vendedor o salário fixo, o valor total 
+de vendas por ele efetuadas na loja e o percentual de comissão que 
+ganha pelas vendas. Calcular e apresentar o valor da comissão que ele 
+vai receber e o salário total.
+-->
