@@ -149,13 +149,24 @@ function eh_positivo() {
 }
 
 //Slide 14 - Exercício 03
-function soma_maiores() {
+function somaDoisMaiores() {
     let valor01 = parseFloat(document.getElementById("input-valor01").value);
     let valor02 = parseFloat(document.getElementById("input-valor02").value);
     let valor03 = parseFloat(document.getElementById("input-valor03").value);
 
+    let soma;
+
+    // Encontrar a soma dos dois maiores valores
+    if ((valor01 > valor02 && valor01 > valor03)) {
+        soma = valor01 + Math.max(valor02, valor03);
+    } else if (valor02 > valor01 && valor02 > valor03) {
+        soma = valor02 + Math.max(valor01, valor03);
+    } else {
+        soma = valor03 + Math.max(valor01, valor02);
+    }
+
     let resultado09 = document.getElementById("resultado09");
-    resultado09.innerHTML = `${somaMaiores}`;
+    resultado09.innerHTML = `A soma dos dois maiores valores é: ${soma}`;
 }
 
 //Slide 17 - Exercício 01
