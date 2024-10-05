@@ -1,5 +1,5 @@
 // Lucas Soares Batista - 01678004
-//Aula 03
+// Aula 03
 
 //Slide 06 - Exercício 01
 function imprimir(tag, texto) {
