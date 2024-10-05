@@ -64,3 +64,19 @@ function calcular_media() {
 }
 
 //Slide 13 - Exercício 02
+
+//Slide 14 - Exercício 01
+//Slide 14 - Exercício 02
+//Slide 14 - Exercício 03
+
+//Slide 17 - Exercício 01
+//Slide 17 - Exercício 02
+
+//Slide 20 - Exercício 01
+//Slide 20 - Exercício 02
+//Slide 20 - Exercício 03
+//Slide 20 - Exercício 04
+
+//Slide 23 - Exercício 01
+//Slide 23 - Exercício 02
+//Slide 23 - Exercício 03
