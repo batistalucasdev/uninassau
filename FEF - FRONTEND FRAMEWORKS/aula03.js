@@ -102,187 +102,184 @@ function calcular_media() { // Função 'calcular_media' sem parâmetros
 }
 
 //Slide 13 - Exercício 02
-function eh_par() {
-    let numero = parseInt(document.getElementById("input-numero").value);
+function eh_par() { // Função 'eh_par' sem parâmetros
+    let numero = parseInt(document.getElementById("input-numero").value); // Pega e converte o valor do campo 'input-numero' para um número inteiro
 
-    let resultado06 = document.getElementById("resultado06");
-    resultado06.innerHTML = `${numero}`;
+    let resultado06 = document.getElementById("resultado06"); // Pega o elemento HTML com id 'resultado06'
+    resultado06.innerHTML = `${numero}`; // Exibe o número no elemento 'resultado06'
 
-    if (numero % 2 == 0) {
-        imprimir("resultado06", `O número é par.`);
-    }
-    else {
-        imprimir("resultado06", `O número é ímpar.`);
+    if (numero % 2 == 0) { // Verifica se o número é par (divisível por 2)
+        imprimir("resultado06", `O número é par.`); // Chama a função 'imprimir' para exibir "O número é par."
+    } else { // Se o número não for par
+        imprimir("resultado06", `O número é ímpar.`); // Chama a função 'imprimir' para exibir "O número é ímpar."
     }
 }
 
 //Slide 14 - Exercício 01
-function custo_carro() {
-    let percentualDistribuidor = 0.28;
-    let percentualImpostos = 0.45;
-    let custoFabrica = parseFloat(document.getElementById("input-custo-carro").value);
+function custo_carro() { // Função 'custo_carro' sem parâmetros
+    let percentualDistribuidor = 0.28; // Define o percentual do distribuidor como 28%
+    let percentualImpostos = 0.45; // Define o percentual dos impostos como 45%
+    let custoFabrica = parseFloat(document.getElementById("input-custo-carro").value); // Pega e converte o valor do campo 'input-custo-carro' para número
 
-    let valorDistribuidor = custoFabrica * percentualDistribuidor;
-    let valorImpostos = custoFabrica * percentualImpostos;
+    let valorDistribuidor = custoFabrica * percentualDistribuidor; // Calcula o valor do distribuidor
+    let valorImpostos = custoFabrica * percentualImpostos; // Calcula o valor dos impostos
 
-    let custoFinal = custoFabrica + valorDistribuidor + valorImpostos;
+    let custoFinal = custoFabrica + valorDistribuidor + valorImpostos; // Calcula o custo final somando os valores
 
-    let resultado07 = document.getElementById("resultado07"); resultado07.innerHTML = `O custo final ao consumidor é: R$ ${custoFinal.toFixed(2)}`;
+    let resultado07 = document.getElementById("resultado07"); // Pega o elemento HTML com id 'resultado07'
+    resultado07.innerHTML = `O custo final ao consumidor é: R$ ${custoFinal.toFixed(2)}`; // Exibe o custo final com 2 casas decimais
 }
 
 //Slide 14 - Exercício 02
-function eh_positivo() {
-    let valor = parseFloat(document.getElementById("input-valor").value);
+function eh_positivo() { // Função 'eh_positivo' sem parâmetros
+    let valor = parseFloat(document.getElementById("input-valor").value); // Pega e converte o valor do campo 'input-valor' para número
 
-    let resultado08 = document.getElementById("resultado08");
-    resultado08.innerHTML = `${valor}`;
+    let resultado08 = document.getElementById("resultado08"); // Pega o elemento HTML com id 'resultado08'
+    resultado08.innerHTML = `${valor}`; // Exibe o valor no elemento 'resultado08'
 
-    if (valor >= 0) {
-        imprimir("resultado08", `O valor é positivo.`);
-    }
-    else {
-        imprimir("resultado08", `O valor é negativo.`);
+    if (valor >= 0) { // Verifica se o valor é maior ou igual a 0
+        imprimir("resultado08", `O valor é positivo.`); // Chama a função 'imprimir' para exibir "O valor é positivo."
+    } else { // Caso o valor seja menor que 0
+        imprimir("resultado08", `O valor é negativo.`); // Chama a função 'imprimir' para exibir "O valor é negativo."
     }
 }
 
 //Slide 14 - Exercício 03
-function somaDoisMaiores() {
-    let valor01 = parseFloat(document.getElementById("input-valor01").value);
-    let valor02 = parseFloat(document.getElementById("input-valor02").value);
-    let valor03 = parseFloat(document.getElementById("input-valor03").value);
+function somaDoisMaiores() { // Função 'somaDoisMaiores' sem parâmetros
+    let valor01 = parseFloat(document.getElementById("input-valor01").value); // Pega e converte o valor do campo 'input-valor01' para número
+    let valor02 = parseFloat(document.getElementById("input-valor02").value); // Pega e converte o valor do campo 'input-valor02' para número
+    let valor03 = parseFloat(document.getElementById("input-valor03").value); // Pega e converte o valor do campo 'input-valor03' para número
 
-    let soma;
+    let soma; // Declara a variável 'soma'
 
     // Encontrar a soma dos dois maiores valores
-    if ((valor01 > valor02 && valor01 > valor03)) {
-        soma = valor01 + Math.max(valor02, valor03);
-    } else if (valor02 > valor01 && valor02 > valor03) {
-        soma = valor02 + Math.max(valor01, valor03);
-    } else {
-        soma = valor03 + Math.max(valor01, valor02);
+    if ((valor01 > valor02 && valor01 > valor03)) { // Verifica se 'valor01' é o maior
+        soma = valor01 + Math.max(valor02, valor03); // Soma 'valor01' com o maior entre 'valor02' e 'valor03'
+    } else if (valor02 > valor01 && valor02 > valor03) { // Verifica se 'valor02' é o maior
+        soma = valor02 + Math.max(valor01, valor03); // Soma 'valor02' com o maior entre 'valor01' e 'valor03'
+    } else { // Caso 'valor03' seja o maior
+        soma = valor03 + Math.max(valor01, valor02); // Soma 'valor03' com o maior entre 'valor01' e 'valor02'
     }
 
-    let resultado09 = document.getElementById("resultado09");
-    resultado09.innerHTML = `A soma dos dois maiores valores é: ${soma}`;
+    let resultado09 = document.getElementById("resultado09"); // Pega o elemento HTML com id 'resultado09'
+    resultado09.innerHTML = `A soma dos dois maiores valores é: ${soma}`; // Exibe a soma dos dois maiores valores
 }
 
 //Slide 17 - Exercício 01
-function fazer_operacao() {
-    let numero01 = parseFloat(document.getElementById("input-numero01").value);
-    let numero02 = parseFloat(document.getElementById("input-numero02").value);
-    let operacao = document.getElementById("operacao").value;
+function fazer_operacao() { // Função 'fazer_operacao' sem parâmetros
+    let numero01 = parseFloat(document.getElementById("input-numero01").value); // Pega e converte o valor do campo 'input-numero01' para número
+    let numero02 = parseFloat(document.getElementById("input-numero02").value); // Pega e converte o valor do campo 'input-numero02' para número
+    let operacao = document.getElementById("operacao").value; // Pega o valor da operação selecionada
 
-    let resultadoOperacao;
+    let resultadoOperacao; // Declara a variável 'resultadoOperacao'
 
-    switch (operacao) {
-        case "soma":
-            resultadoOperacao = numero01 + numero02;
-            break;
+    switch (operacao) { // Inicia o bloco switch para verificar a operação
+        case "soma": // Caso a operação seja soma
+            resultadoOperacao = numero01 + numero02; // Realiza a soma
+            break; // Sai do switch
 
-        case "subtracao":
-            resultadoOperacao = numero01 - numero02;
-            break;
+        case "subtracao": // Caso a operação seja subtração
+            resultadoOperacao = numero01 - numero02; // Realiza a subtração
+            break; // Sai do switch
 
-        case "multiplicacao":
-            resultadoOperacao = numero01 * numero02;
-            break;
+        case "multiplicacao": // Caso a operação seja multiplicação
+            resultadoOperacao = numero01 * numero02; // Realiza a multiplicação
+            break; // Sai do switch
 
-        case "divisao":
-            if (numero02 !== 0) {
-                resultadoOperacao = numero01 / numero02;
-            } else {
-                resultadoOperacao = "Erro: Divisão por zero!";
+        case "divisao": // Caso a operação seja divisão
+            if (numero02 !== 0) { // Verifica se o divisor não é zero
+                resultadoOperacao = numero01 / numero02; // Realiza a divisão
+            } else { // Se o divisor for zero
+                resultadoOperacao = "Erro: Divisão por zero!"; // Define a mensagem de erro
             }
-            break;
+            break; // Sai do switch
 
-        default:
-            resultadoOperacao = "Operação inválida";
+        default: // Caso a operação não seja válida
+            resultadoOperacao = "Operação inválida"; // Define a mensagem de operação inválida
     }
 
-    let elementoResultado10 = document.getElementById("resultado10");
-    elementoResultado10.innerHTML = `O resultado da operação é: ${resultadoOperacao}`;
+    let elementoResultado10 = document.getElementById("resultado10"); // Pega o elemento HTML com id 'resultado10'
+    elementoResultado10.innerHTML = `O resultado da operação é: ${resultadoOperacao}`; // Exibe o resultado da operação
 }
 
-
 //Slide 17 - Exercício 02
-function verificar_idade() {
-    let idade = parseInt(document.getElementById("input-idade").value);
-    let classificacao;
+function verificar_idade() { // Função 'verificar_idade' sem parâmetros
+    let idade = parseInt(document.getElementById("input-idade").value); // Pega e converte o valor do campo 'input-idade' para número inteiro
+    let classificacao; // Declara a variável 'classificacao'
 
-    switch (true) {
-        case (idade >= 0 && idade <= 12):
-            classificacao = "Criança";
-            break;
-        case (idade >= 13 && idade <= 20):
-            classificacao = "Adolescente";
-            break;
-        case (idade >= 21 && idade <= 50):
-            classificacao = "Adulto";
-            break;
-        case (idade > 50):
-            classificacao = "Idoso";
-            break;
-        default:
-            classificacao = "Idade inválida";
+    switch (true) { // Inicia o bloco switch para classificar a idade
+        case (idade >= 0 && idade <= 12): // Verifica se a idade está entre 0 e 12 anos
+            classificacao = "Criança"; // Define a classificação como "Criança"
+            break; // Sai do switch
+        case (idade >= 13 && idade <= 20): // Verifica se a idade está entre 13 e 20 anos
+            classificacao = "Adolescente"; // Define a classificação como "Adolescente"
+            break; // Sai do switch
+        case (idade >= 21 && idade <= 50): // Verifica se a idade está entre 21 e 50 anos
+            classificacao = "Adulto"; // Define a classificação como "Adulto"
+            break; // Sai do switch
+        case (idade > 50): // Verifica se a idade é maior que 50 anos
+            classificacao = "Idoso"; // Define a classificação como "Idoso"
+            break; // Sai do switch
+        default: // Caso a idade não se encaixe nas condições anteriores
+            classificacao = "Idade inválida"; // Define a classificação como "Idade inválida"
     }
-
-    let resultado11 = document.getElementById("resultado11");
-    resultado11.innerHTML = `A pessoa é: ${classificacao}`;
+    let resultado11 = document.getElementById("resultado11"); // Pega o elemento HTML com id 'resultado11'
+    resultado11.innerHTML = `A pessoa é: ${classificacao}`; // Exibe a classificação da pessoa
 }
 
 //Slide 20 - Exercício 01
-function calcularSomaFor() {
-    let soma = 0;
+function calcularSomaFor() { // Função 'calcularSomaFor' sem parâmetros
+    let soma = 0; // Inicializa a variável 'soma' com 0
 
-    for (let i = 1; i <= 100; i++) {
-        soma += i;
+    for (let i = 1; i <= 100; i++) { // Loop de 1 a 100
+        soma += i; // Adiciona o valor de 'i' à 'soma'
     }
 
-    let resultado12 = document.getElementById("resultado12");
-    resultado12.innerHTML = `A soma dos números entre 1 e 100 é: ${soma}`;
+    let resultado12 = document.getElementById("resultado12"); // Pega o elemento HTML com id 'resultado12'
+    resultado12.innerHTML = `A soma dos números entre 1 e 100 é: ${soma}`; // Exibe a soma dos números entre 1 e 100
 }
 
 //Slide 20 - Exercício 02
-function calcularMediaFor() {
-    let soma = 0;
-    let quantidade = 100;
+function calcularMediaFor() { // Função 'calcularMediaFor' sem parâmetros
+    let soma = 0; // Inicializa a variável 'soma' com 0
+    let quantidade = 100; // Define a quantidade de números a serem considerados
 
-    for (let i = 1; i <= 100; i++) {
-        soma += i;
+    for (let i = 1; i <= 100; i++) { // Loop de 1 a 100
+        soma += i; // Adiciona o valor de 'i' à 'soma'
     }
 
-    let media = soma / quantidade;
+    let media = soma / quantidade; // Calcula a média dividindo a soma pela quantidade
 
-
-    let resultado13 = document.getElementById("resultado13");
-    resultado13.innerHTML = `A soma dos números entre 1 e 100 é: ${media}`;
+    let resultado13 = document.getElementById("resultado13"); // Pega o elemento HTML com id 'resultado13'
+    resultado13.innerHTML = `A média dos números entre 1 e 100 é: ${media}`; // Exibe a média dos números entre 1 e 100
 }
-//Slide 20 - Exercício 03
-function calcularSomaParesFor() {
-    let soma = 0;
 
-    for (let i = 1; i <= 100; i++) {
+//Slide 20 - Exercício 03
+function calcularSomaParesFor() { // Função 'calcularSomaParesFor' sem parâmetros
+    let soma = 0; // Inicializa a variável 'soma' com 0
+
+    for (let i = 1; i <= 100; i++) { // Loop de 1 a 100
         if (i % 2 === 0) { // Verifica se o número é par
             soma += i; // Adiciona o número par à soma
         }
     }
 
-    let resultado14 = document.getElementById("resultado14");
-    resultado14.innerHTML = `A soma dos números pares entre 1 e 100 é: ${soma}`;
+    let resultado14 = document.getElementById("resultado14"); // Pega o elemento HTML com id 'resultado14'
+    resultado14.innerHTML = `A soma dos números pares entre 1 e 100 é: ${soma}`; // Exibe a soma dos números pares entre 1 e 100
 }
 
 //Slide 20 - Exercício 04
-function calcularSomaImparesFor() {
-    let soma = 0;
+function calcularSomaImparesFor() { // Função 'calcularSomaImparesFor' sem parâmetros
+    let soma = 0; // Inicializa a variável 'soma' com 0
 
-    for (let i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 100; i++) { // Loop de 1 a 100
         if (i % 2 !== 0) { // Verifica se o número é ímpar
             soma += i; // Adiciona o número ímpar à soma
         }
     }
 
-    let resultado15 = document.getElementById("resultado15");
-    resultado15.innerHTML = `A soma dos números pares entre 1 e 100 é: ${soma}`;
+    let resultado15 = document.getElementById("resultado15"); // Pega o elemento HTML com id 'resultado15'
+    resultado15.innerHTML = `A soma dos números ímpares entre 1 e 100 é: ${soma}`; // Exibe a soma dos números ímpares entre 1 e 100
 }
 
 //Slide 23 - Exercício 01
@@ -306,8 +303,8 @@ function exibir_tabuada() {
 }
 
 //Slide 23 - Exercício 02
-function calcularMediaWhile() {
-    let numAlunos = parseInt(prompt("Quantos alunos há na sala?")); // Pergunta ao usuário quantos alunos
+function calcularMediaWhile() { // Função 'calcularMediaWhile' sem parâmetros
+    let numAlunos = parseInt(prompt("Quantos alunos há na sala?")); // Pergunta ao usuário quantos alunos há na sala
     let somaNotas = 0; // Inicializa a soma das notas
     let contador = 0; // Contador para controlar o número de notas
 
@@ -318,17 +315,17 @@ function calcularMediaWhile() {
     }
 
     let media = somaNotas / numAlunos; // Calcula a média
-    let resultado17 = document.getElementById("resultado17");
+    let resultado17 = document.getElementById("resultado17"); // Pega o elemento HTML com id 'resultado17'
     resultado17.innerHTML = `A média da turma é: ${media.toFixed(2)}`; // Exibe a média formatada com 2 casas decimais
 }
 
 //Slide 23 - Exercício 03
-function calcularSomaWhile() {
+function calcularSomaWhile() { // Função 'calcularSomaWhile' sem parâmetros
     let N = parseInt(document.getElementById("input-n").value); // Lê o valor de N
     let soma = 0; // Inicializa a soma
 
     // Valida se N é um número positivo
-    if (N > 0) {
+    if (N > 0) { 
         let contador = 1; // Inicializa o contador
 
         while (contador <= N) { // Laço para somar de 1 até N
@@ -336,7 +333,7 @@ function calcularSomaWhile() {
             contador++; // Incrementa o contador
         }
 
-        let resultado18 = document.getElementById("resultado18");
+        let resultado18 = document.getElementById("resultado18"); // Pega o elemento HTML com id 'resultado18'
         resultado18.innerHTML = `A soma de todos os números inteiros de 1 a ${N} é: ${soma}`; // Exibe o resultado
     } else {
         alert("Por favor, insira um número inteiro positivo."); // Mensagem de erro se N não for positivo
