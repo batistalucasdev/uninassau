@@ -2,105 +2,102 @@
 // Aula 03
 
 //Slide 06 - Exercício 01
-function imprimir(tag, texto) {
-    let resultado = document.getElementById(tag);
-    resultado.innerHTML = texto;
+function imprimir(tag, texto) { // Função 'imprimir' que recebe 'tag' e 'texto'
+    let resultado = document.getElementById(tag); // Busca o elemento HTML pelo id fornecido em 'tag'
+    resultado.innerHTML = texto; // Define o conteúdo HTML interno como o valor de 'texto'
 }
 
 //Slide 06 - Exercício 01
-function verificar_senha() {
-    const usuarioSistema = "Lucas";
-    const senhaSistema = "teste";
-    let usuario = document.getElementById("input-usuario").value;
-    let senha = document.getElementById("input-senha").value;
+function verificar_senha() { // Função 'verificar_senha' sem parâmetros
+    const usuarioSistema = "Lucas"; // Define a constante 'usuarioSistema' com o valor "Lucas"
+    const senhaSistema = "teste"; // Define a constante 'senhaSistema' com o valor "teste"
+    let usuario = document.getElementById("input-usuario").value; // Pega o valor do campo de entrada com id 'input-usuario'
+    let senha = document.getElementById("input-senha").value; // Pega o valor do campo de entrada com id 'input-senha'
 
-    console.log(senha);
-    if (senha == senhaSistema && usuario == usuarioSistema) {
-        imprimir("resultado01", `Senha válida`);
+    console.log(senha); // Exibe a senha no console para depuração
+    if (senha == senhaSistema && usuario == usuarioSistema) { // Verifica se a senha e o usuário correspondem aos valores do sistema
+        imprimir("resultado01", `Senha válida`); // Chama a função 'imprimir' para mostrar "Senha válida" na tela
     }
-    else {
-        imprimir("resultado01", `Senha inválida`);
+    else { // Caso contrário
+        imprimir("resultado01", `Senha inválida`); // Chama a função 'imprimir' para mostrar "Senha inválida" na tela
     }
 }
 
 //Slide 06 - Exercício 02
-function palavra_chave() {
-    const palavra_chave_01 = "senhazinha";
-    const palavra_chave_02 = "senhazona";
-    let chave01 = document.getElementById("input-palavra-chave-01").value;
-    let chave02 = document.getElementById("input-palavra-chave-02").value;
+function palavra_chave() { // Função 'palavra_chave' sem parâmetros
+    const palavra_chave_01 = "senhazinha"; // Define a constante 'palavra_chave_01' com o valor "senhazinha"
+    const palavra_chave_02 = "senhazona"; // Define a constante 'palavra_chave_02' com o valor "senhazona"
+    let chave01 = document.getElementById("input-palavra-chave-01").value; // Pega o valor do campo de entrada com id 'input-palavra-chave-01'
+    let chave02 = document.getElementById("input-palavra-chave-02").value; // Pega o valor do campo de entrada com id 'input-palavra-chave-02'
 
-    if (chave01 == palavra_chave_01 || chave02 == palavra_chave_02) {
-        imprimir("resultado02", `Chave válida`);
+    if (chave01 == palavra_chave_01 || chave02 == palavra_chave_02) { // Verifica se uma das chaves corresponde aos valores do sistema
+        imprimir("resultado02", `Chave válida`); // Chama a função 'imprimir' para mostrar "Chave válida" na tela
     }
-    else {
-        imprimir("resultado02", `Chave inválida`);
+    else { // Caso contrário
+        imprimir("resultado02", `Chave inválida`); // Chama a função 'imprimir' para mostrar "Chave inválida" na tela
     }
-
 }
 
 //Slide 06 - Exercício 03
-function ordem_crescente() {
-    let num1 = parseFloat(document.getElementById("input-numero-01").value);
-    let num2 = parseFloat(document.getElementById("input-numero-02").value);
-    let num3 = parseFloat(document.getElementById("input-numero-03").value);
+function ordem_crescente() { // Função 'ordem_crescente' sem parâmetros
+    let num1 = parseFloat(document.getElementById("input-numero-01").value); // Pega e converte o valor do campo 'input-numero-01' para número
+    let num2 = parseFloat(document.getElementById("input-numero-02").value); // Pega e converte o valor do campo 'input-numero-02' para número
+    let num3 = parseFloat(document.getElementById("input-numero-03").value); // Pega e converte o valor do campo 'input-numero-03' para número
 
-    let resultado03 = '';
+    let resultado03 = ''; // Variável para armazenar a ordem crescente dos números
 
     // Ordenação usando operadores lógicos
-    if (num1 <= num2 && num1 <= num3) {
-        resultado03 += num1 + ' ';
+    if (num1 <= num2 && num1 <= num3) { // Se 'num1' for o menor ou igual aos outros
+        resultado03 += num1 + ' '; // Adiciona 'num1' ao resultado
         if (num2 <= num3) {
             resultado03 += num2 + ' ' + num3; // num1 < num2 < num3
         } else {
             resultado03 += num3 + ' ' + num2; // num1 < num3 < num2
         }
-    } else if (num2 <= num1 && num2 <= num3) {
-        resultado03 += num2 + ' ';
+    } else if (num2 <= num1 && num2 <= num3) { // Se 'num2' for o menor ou igual aos outros
+        resultado03 += num2 + ' '; // Adiciona 'num2' ao resultado
         if (num1 <= num3) {
             resultado03 += num1 + ' ' + num3; // num2 < num1 < num3
         } else {
             resultado03 += num3 + ' ' + num1; // num2 < num3 < num1
         }
-    } else {
-        resultado03 += num3 + ' ';
+    } else { // Caso contrário, 'num3' é o menor
+        resultado03 += num3 + ' '; // Adiciona 'num3' ao resultado
         if (num1 <= num2) {
             resultado03 += num1 + ' ' + num2; // num3 < num1 < num2
         } else {
             resultado03 += num2 + ' ' + num1; // num3 < num2 < num1
         }
     }
-
-    document.getElementById("resultado03").innerHTML = `Números em ordem crescente: ${resultado03}`;
+    document.getElementById("resultado03").innerHTML = `Números em ordem crescente: ${resultado03}`; // Exibe o resultado ordenado na tela
 }
 
 //Slide 06 - Exercício 04
-function calcular_consumo() {
-    let distancia = parseFloat(document.getElementById("input-distancia").value);
-    let combustivel = parseFloat(document.getElementById("input-combustivel").value);
+function calcular_consumo() { // Função 'calcular_consumo' sem parâmetros
+    let distancia = parseFloat(document.getElementById("input-distancia").value); // Pega e converte o valor do campo 'input-distancia' para número
+    let combustivel = parseFloat(document.getElementById("input-combustivel").value); // Pega e converte o valor do campo 'input-combustivel' para número
 
-    if (distancia > 0 && combustivel > 0) {
-        let consumoMedio = distancia / combustivel;
-        document.getElementById("resultado04").innerHTML = `O consumo médio é de ${consumoMedio.toFixed(2)} km/l.`;
-    } else {
-        document.getElementById("resultado04").innerHTML = "Por favor, insira valores válidos para distância e combustível.";
+    if (distancia > 0 && combustivel > 0) { // Verifica se os valores de 'distancia' e 'combustivel' são maiores que 0
+        let consumoMedio = distancia / combustivel; // Calcula o consumo médio dividindo a 'distancia' pelo 'combustivel'
+        document.getElementById("resultado04").innerHTML = `O consumo médio é de ${consumoMedio.toFixed(2)} km/l.`; // Exibe o consumo médio com 2 casas decimais
+    } else { // Caso algum valor seja inválido
+        document.getElementById("resultado04").innerHTML = "Por favor, insira valores válidos para distância e combustível."; // Exibe mensagem de erro
     }
 }
 
 //Slide 13 - Exercício 01
-function calcular_media() {
-    let num01 = parseFloat(document.getElementById("input-num-01").value);
-    let num02 = parseFloat(document.getElementById("input-num-02").value);
-    let num03 = parseFloat(document.getElementById("input-num-03").value);
+function calcular_media() { // Função 'calcular_media' sem parâmetros
+    let num01 = parseFloat(document.getElementById("input-num-01").value); // Pega e converte o valor do campo 'input-num-01' para número
+    let num02 = parseFloat(document.getElementById("input-num-02").value); // Pega e converte o valor do campo 'input-num-02' para número
+    let num03 = parseFloat(document.getElementById("input-num-03").value); // Pega e converte o valor do campo 'input-num-03' para número
 
-    let media = (num01 + num02 + num03) / 3;
+    let media = (num01 + num02 + num03) / 3; // Calcula a média dos três números
 
-    let resultado05 = document.getElementById("resultado05");
-    resultado05.innerHTML = `A média desses números é ${media.toFixed(2)}`;
+    let resultado05 = document.getElementById("resultado05"); // Pega o elemento HTML com id 'resultado05'
+    resultado05.innerHTML = `A média desses números é ${media.toFixed(2)}`; // Exibe a média com 2 casas decimais
 
-    if (media > 6) {
-
-        imprimir("resultado05", `O aluno está aprovado.`);
+    if (media > 6) { // Verifica se a média é maior que 6
+        imprimir("resultado05", `O aluno está aprovado.`); // Chama a função 'imprimir' para exibir "O aluno está aprovado."
     }
 }
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Redimensionável com CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        /* Divs dentro das colunas com redimensionamento */
+        .resizable {
+            overflow: auto; /* Necessário para habilitar o resize */
+            resize: horizontal; /* Permite redimensionamento horizontal */
+            min-width: 100px; /* Largura mínima para as colunas */
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Ajuste para garantir que o conteúdo da tabela não quebre o layout */
+        td {
+            white-space: nowrap; /* Evita quebra de linha dentro da célula */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th><div class="resizable">Nome</div></th>
+                <th><div class="resizable">Email</div></th>
+                <th><div class="resizable">Idade</div></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><div class="resizable">Ana Silva</div></td>
+                <td><div class="resizable">ana@email.com</div></td>
+                <td><div class="resizable">25</div></td>
+            </tr>
+            <tr>
+                <td><div class="resizable">João Pereira</div></td>
+                <td><div class="resizable">joao@email.com</div></td>
+                <td><div class="resizable">30</div></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com CSS Grid e Flexbox</title>
+    <style>
+        /* Layout principal com Grid */
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        /* Áreas específicas */
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Flexbox para navegação */
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            padding: 10px;
+            background-color: #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links a:hover {
+            background-color: #bbb;
+        }
+
+        /* Flexbox para galeria */
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Meu Site</h1>
+        </header>
+
+        <!-- Navegação (Flexbox) -->
+        <nav>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </div>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o conteúdo principal da página. Aqui você pode colocar textos, imagens, vídeos, etc.</p>
+
+            <!-- Galeria de Imagens (Flexbox) -->
+            <div class="gallery">
+                <img src="https://via.placeholder.com/100" alt="Imagem 1">
+                <img src="https://via.placeholder.com/100" alt="Imagem 2">
+                <img src="https://via.placeholder.com/100" alt="Imagem 3">
+                <img src="https://via.placeholder.com/100" alt="Imagem 4">
+            </div>
+        </main>
+
+        <!-- Barra Lateral -->
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Esta é a barra lateral, que pode conter links ou informações adicionais.</p>
+        </aside>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>Rodapé do site</p>
+        </footer>
+    </div>
+
+</body>
+</html>

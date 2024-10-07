@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exemplo 2</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: lightcoral;
+            padding: 20px;
+            border: 1px solid #000;
+            width: 50%;
+        }
+
+        .box.special {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Caixa 1</div>
+        <div class="box special">Caixa 2 (maior)</div>
+        <div class="box">Caixa 3</div>
+    </div>
+
+</body>
+</html>
