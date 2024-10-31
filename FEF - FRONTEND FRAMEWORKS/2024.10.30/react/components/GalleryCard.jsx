@@ -1,0 +1,1 @@
+//usar div que teem o class gallery-card, implementar o map()
