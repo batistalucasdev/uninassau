@@ -1,16 +1,18 @@
-import styles from "./NavBar.module.css"
-import Item from "../../../components/Item/Item"
+import Styles from "./NavBar.module.css"
+import Item from "../../../components/NavBar/Item"
 
-export default function NavBar() {
+function NavBar() {
     return (
-        <nav className = {styles.header_navbar}>
+        <nav class={Styles.header_navbar}>
             <ul>
-                <Item content="Home" flag = {true} />
-                <Item content="Fotos" />
-                <Item content="Serviços" />
-                <Item content="Sobre" />
-                <Item content="Contato" />
+               <Item content="Home"/>
+               <Item content="Fotos"/>
+               <Item content="Serviços"/>
+               <Item content="Sobre"/>
+               <Item content="Contato"/>
             </ul>
-        </nav >
+        </nav>
     )
 }
+
+export default NavBar

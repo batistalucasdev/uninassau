@@ -8,10 +8,6 @@ li .active {
     color: #20C997;
 }
 
-li .notactive {
-    color: none;
-}
-
 li a:hover {
     color: #20C997;
 }
