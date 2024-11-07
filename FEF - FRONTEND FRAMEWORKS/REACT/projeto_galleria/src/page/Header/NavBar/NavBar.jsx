@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <nav class={Styles.header_navbar}>
             <ul>
-               <Item content="Home"/>
+               <Item content="Home" flag={true}/>
                <Item content="Fotos"/>
                <Item content="Serviços"/>
                <Item content="Sobre"/>

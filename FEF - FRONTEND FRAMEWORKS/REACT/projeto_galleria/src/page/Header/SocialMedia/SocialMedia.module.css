@@ -1,0 +1,12 @@
+.header_social_media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (max-width: 425px) {
+    .header_social_media ul {
+        display: none;
+    }
+}

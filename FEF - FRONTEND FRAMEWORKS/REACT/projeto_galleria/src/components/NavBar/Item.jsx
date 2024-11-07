@@ -3,7 +3,7 @@ import Styles from "./Item.module.css"
 function Item({ content, flag }) {
     return (
         <li>
-            <a href="#" class={Styles.active}>{content}</a>
+            <a href="#" className={flag?Styles.active:Styles.notactive}>{content}</a>
         </li>
     )
 }
