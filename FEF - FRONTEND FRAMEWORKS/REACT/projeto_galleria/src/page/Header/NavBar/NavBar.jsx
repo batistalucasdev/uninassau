@@ -3,7 +3,7 @@ import Item from "../../../components/NavBar/Item"
 
 function NavBar() {
     return (
-        <nav class={Styles.header_navbar}>
+        <nav className={Styles.header_navbar}>
             <ul>
                <Item content="Home" flag={true}/>
                <Item content="Fotos"/>

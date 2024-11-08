@@ -1,0 +1,51 @@
+.GalleryCard {
+    width: 31%;
+    height: 400px;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+@media (max-width: 425px) {
+    .GalleryCard {
+        width: 90%;
+        margin-bottom: 6%;
+    }
+}
+
+.GalleryCard_title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.GalleryCard_btn {
+    padding: 0.6rem 2rem;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.GalleryCard_btn:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.GalleryCard {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+}
+
+.GalleryCard:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
