@@ -1,0 +1,11 @@
+.header_navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 425px) {
+    .header_navbar ul {
+      display: none;
+    }
+  }
