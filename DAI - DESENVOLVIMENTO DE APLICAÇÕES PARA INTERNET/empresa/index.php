@@ -25,6 +25,10 @@
                     <input type="text" class="form-control" name="endereco">
                 </div>
                 <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" name="telefone">
+                </div>
+                <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email">
                 </div>
