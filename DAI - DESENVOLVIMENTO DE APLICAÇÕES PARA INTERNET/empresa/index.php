@@ -16,32 +16,34 @@
         <div class="row">
             <div class="col">
                 <h1>Cadastro</h1>
-                <div class="form-group">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" class="form-control" name="nome">
-                </div>
-                <div class="form-group">
-                    <label for="endereco">Endereço</label>
-                    <input type="text" class="form-control" name="endereco">
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control" name="telefone">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="dt_nascimento">Data de Nascimento</label>
-                    <input type="date" class="form-control" name="dt_nascimento">
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn-sucess">
+                <form action="cadastro script.php" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" class="form-control" name="endereco">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" name="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="dt_nascimento">Data de Nascimento</label>
+                        <input type="date" class="form-control" name="dt_nascimento">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-success">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
