@@ -23,7 +23,7 @@
            $email = $_POST['email'];
            $dt_nascimento = $_POST['dt_nascimento'];
 
-           $sql = "INSERT INTO `Pessoa`(`nome`, `endereco`, `telefone`, `email`, `dt_nascimento`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
+           $sql = "INSERT INTO Pessoa (nome, endereco, telefone, email, dt_nascimento) VALUES ('$nome','$endereco','$telefone','$email','$dt_nascimento')";
 
           if (mysqli_query($conn,$sql)){
             echo "$nome CADASTRADO COM SUCESSO!";
