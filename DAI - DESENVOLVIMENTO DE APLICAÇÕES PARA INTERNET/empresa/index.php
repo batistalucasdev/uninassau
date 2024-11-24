@@ -40,10 +40,11 @@
                     <div class="form-group">
                         <input type="submit" class="btn-success">
                     </div>
+                </form>
+                <a href="admin.php"><button type="button" class="btn btn-danger">admin</button></a>
                 </div>
             </div>
         </div>
-    </form>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
