@@ -14,16 +14,16 @@
     
     <div class="container">
         <div class="row">
-              <form action="remover script.php" method="post">
+            <form action="buscar_script.php" method="post">
                 <div class="form-row">
                     <div class="col">
                     <input type="text" class="form-control" placeholder="Nome" name="nome">
                     </div>
                     <div class="col">
-                    <button type="submit" class="btn btn-danger">Excluir</button>
+                    <button type="submit" class="btn btn-warning">Buscar</button>
                     </div>
                 </div>
-              </form>
+            </form>
         </div>
     </div>
 

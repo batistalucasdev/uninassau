@@ -17,19 +17,36 @@
            <?php
            include "conexao.php";
 
-           $nome = $_POST['nome'];
-           $endereco = $_POST['endereco'];
-           $telefone = $_POST['telefone'];
-           $email = $_POST['email'];
-           $dt_nascimento = $_POST['dt_nascimento'];
+           if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $nome = $_POST['nome'];
 
-           $sql = "INSERT INTO Pessoa (nome, endereco, telefone, email, dt_nascimento) VALUES ('$nome','$endereco','$telefone','$email','$dt_nascimento')";
+            if (!empty($nome)) {
 
-          if (mysqli_query($conn,$sql)){
-            echo "$nome CADASTRADO COM SUCESSO!";
-          }
-          else
-            echo "$nome NÃO CADASTRADO.";
+                $sql_select = "SELECT * FROM Pessoa WHERE nome = ?";
+                $stmt = $conn->prepare($sql_select);
+                $stmt->bind_param("s", $nome); 
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                if ($result->num_rows > 0) {
+
+                    $sql_delete = "DELETE FROM Pessoa WHERE nome = ?";
+                    $stmt_delete = $conn->prepare($sql_delete);
+                    $stmt_delete->bind_param("s", $nome);
+                    $stmt_delete->execute();
+
+                    if ($stmt_delete->affected_rows > 0) {
+                        echo "Usuário <strong>$nome</strong> foi deletado com sucesso!";
+                    } else {
+                        echo "Erro ao deletar o usuário $nome";
+                    }
+                } else {
+                    echo "Usuário <strong>$nome</strong> não encontrado.";
+                }
+            } else {
+                echo "Por favor, preencha o campo nome.";
+            }
+            }
            ?>
         </div>
     </div>

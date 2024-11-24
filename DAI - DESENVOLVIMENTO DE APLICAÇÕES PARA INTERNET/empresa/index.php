@@ -38,10 +38,12 @@
                         <input type="date" class="form-control" name="dt_nascimento">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn-success">
+                        <input type="submit" class="btn btn-success">
                     </div>
                 </form>
-                <a href="admin.php"><button type="button" class="btn btn-danger">admin</button></a>
+                <a href="admin.php"><button type="button" class="btn btn-danger">Admin</button></a>
+
+                <a href="busca_usuario.php"><button type="button" class="btn btn-warning">Buscar</button></a>
                 </div>
             </div>
         </div>

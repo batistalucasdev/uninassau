@@ -5,8 +5,8 @@
     $bd = "empresa";
 
     if ($conn = mysqli_connect($server, $user, $pass, $bd)){
-        echo "CONECTADO!";
+        echo "CONECTADO!\n";
     }
     else
-        echo "ERRO!";
+        echo "ERRO!\n";
 ?>
